@@ -17,7 +17,7 @@ class AwesomeAddon {
     }
 
     protected function do_something_awesome() {
-        //...
+        //explicacion
     }
 
 }
