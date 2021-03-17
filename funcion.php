@@ -19,6 +19,7 @@ function upload_attachment_to_s3( $post_id, $data = null, $file_path = null, $fo
 		return $this->return_upload_error( $error_msg, $return_metadata );
 	}
 
+$type=1;
 	// check mime type of file is in allowed S3 mime types
 	if ( ! $this->is_valid_mime_type() ) {
 		$error_msg = sprintf( __( 'Mime type %s is not allowed', 'amazon-s3-and-cloudfront' ), $type );
